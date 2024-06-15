@@ -1,0 +1,124 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: wheat;
+  color: brown;
+  padding: 15px;
+  text-align: center;
+}
+.container {
+  margin-top: 150px;
+  padding: 20px;
+}
+.container-inner {
+  margin-left: 5% !important;
+  margin-right: 5% !important;
+}
+footer {
+  background-color: wheat;
+  color: brown;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.produk {
+  font-family: "Poppins", sans-serif;
+  background-color: white; /* Warna latar belakang halaman */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.product-container {
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(90, 89, 89, 0.1);
+  display: flex;
+  max-width: 800px;
+  width: 250px;
+  align-items: center;
+  gap: 20px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+.product-image {
+  width: 100%;
+  text-align: center;
+  background-color: wheat;
+  padding: 15px;
+  height: 350px;
+  border-radius: 15px;
+  color: brown;
+}
+.gambar-produk {
+  height: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-title {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+  color: brown;
+}
+
+.product-description {
+  font-size: 16px;
+  color: brown;
+  margin: 0 0 20px 0;
+}
+
+.product-price {
+  font-size: 20px;
+  color: brown;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 0.7rem;
+  color: white;
+  background: brown;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 2px rgba(1, 1, 3, 0.5);
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    margin-left: 15px;
+    width: 40%;
+  }
+  .container {
+    margin-top: 50px;
+    margin-bottom: 100px !important;
+  }
+  .gambar-produk {
+    height: 40%;
+  }
+  .product-image {
+    height: 250px;
+  }
+  .product-title {
+    font-size: 20px;
+  }
+}

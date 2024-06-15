@@ -1,0 +1,132 @@
+:root {
+  --primary: rgb(213, 74, 74);
+  --bg: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+/*ulasan?*/
+body {
+  font-family: "Times New Roman", Times, serif, sans-serif;
+  background-color: wheat;
+  margin: 0;
+  padding: 0;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+  margin-top: 150px !important;
+  color: brown;
+}
+
+.review-item {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: calc(25% - 40px);
+  box-sizing: border-box;
+}
+
+.review-item h3 {
+  margin: 10px 0;
+  font-size: 25px;
+  color: brown;
+}
+
+.review-item p {
+  font-size: 20pxx;
+  color: brown;
+}
+
+.review-item .reviewer {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  color: brown;
+}
+
+.star {
+  font-size: 24px;
+  color: #ffd700; /* Warna kuning untuk bintang */
+  margin: 0 2px;
+}
+
+.add-review-container {
+  background-color: #fff;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: calc(100% - 100px);
+  box-sizing: border-box;
+  color: brown;
+}
+
+.add-review-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-review-container label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.add-review-container input,
+.add-review-container textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-review-container button {
+  padding: 10px;
+  background-color: white;
+  color: brown;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-review-container button:hover {
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .reviews-container {
+    margin-left: 20px;
+    width: 100%;
+  }
+  .container {
+    margin-top: 50px;
+    margin-bottom: 100px !important;
+  }
+
+  .reviews-title {
+    font-size: 20px;
+  }
+  .star {
+    font-size: 15px;
+    color: #ffd700; /* Warna kuning untuk bintang */
+    margin: 0 2px;
+  }
+  .review-item h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: brown;
+  }
+}
